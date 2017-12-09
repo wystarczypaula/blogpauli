@@ -19,7 +19,13 @@
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
             </div>
             <img src="https://memegenerator.net/img/instances/400x/61780278/es-cotorreo-we-ntc.jpg" />
-        
+        <hr/>
+        {% for post in object_list %}
+        <h3>{{post.title}}</h3>
+        <p>{{post.author}}</p>
+        <p>{{post.text}}</p>
+        <hr/>
+        {% endfor %}
             
         </body>
     </html>
